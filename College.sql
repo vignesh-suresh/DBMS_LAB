@@ -14,6 +14,7 @@ create table SUBJECT(Subject_Code varchar(7), Title varchar(5), Semester int, Cr
 
 create table IAMARKS(USN varchar(10), Subject_Code varchar(7), SSID varchar(2), Test1 int, Test2 int, Test3 int, FinalIA int, Primary Key (USN, Subject_Code, SSID), Foreign Key (USN) references STUDENT(USN), Foreign Key (SSID) references SEMSEC(SSID), Foreign Key (Subject_Code) references SUBJECT(Subject_Code));
 
+-- add inserts as required
 insert into STUDENT values
 ('1BI15CS101', 'Anitha', 'Basavanagudi', '9876543212', 'Female'),
 ('1BI15CS102', 'Sunitha', 'Banashankari', '9876543215', 'Female'),
